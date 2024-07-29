@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Event from './components/Event';
+import Condition from './components/Conditions';
+
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root2345'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Event />
+    <Condition />
+
   </React.StrictMode>
 );
 
