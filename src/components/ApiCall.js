@@ -1,7 +1,7 @@
 import {useState, useEffect } from 'react';
 
 function ApiCall(){
-	const [ data, setData ] = useState([]);
+	const [ data, setData ] = useState([]); //  mountaing phase
 	const [ loading, setLoading ] = useState(true);
 
 	useEffect(() => {
@@ -24,10 +24,16 @@ function ApiCall(){
 		fetApiData();
 	},[]);
 
+	if(loading){
+		return(
+			<div>Loading.....</div>
+		)
+	}
  
 	return(
 		<>
 			<h1>API CALL</h1>
+
 			{data.map(item => (
 				<div key={item.id}>{item.title}</div>
 			))}
