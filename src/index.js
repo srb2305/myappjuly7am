@@ -10,13 +10,14 @@ import ParantComponent from './components/LiftingStateUp';
 import LifeCycle from './components/LifeCycle';
 import ApiCall from './components/ApiCall';
 import ContactForm from './components/ContactForm';
+import ParentComponent from './components/ContextApi/ParentComponent';
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root2345'));
 root.render(
   <React.StrictMode>
-    <ContactForm />
+    <ParentComponent />
   </React.StrictMode>
 );
 

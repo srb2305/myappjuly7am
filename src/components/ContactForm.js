@@ -50,6 +50,7 @@ function ContactForm(){
 			<div>
 				Gender : 
 				<select name="gender" value={gender} onChange={(e)=> setGender(e.target.value)} >
+					<option value="">Select Your Gender</option>
 					<option value="male">Male</option>
 					<option value="female">FeMale</option>
 				</select> { (errors.gender) && <span>{errors.gender}</span> }
