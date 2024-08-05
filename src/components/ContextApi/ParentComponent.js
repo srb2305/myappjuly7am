@@ -11,7 +11,7 @@ const ParentComponent = () => {
 
 	return (
 		<UserContext.Provider value={user}>
-			<h1> ParentComponent </h1>
+			<h1> ParentComponent 1</h1>
 				<ChildComponent />
 		</UserContext.Provider>
 	)
