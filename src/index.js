@@ -13,13 +13,30 @@ import ContactForm from './components/ContactForm';
 import ParentComponent from './components/ContextApi/ParentComponent';
 import Counter from './components/Hooks/UseReducer';
 import TextInputWithFocusButtonClick from './components/Hooks/useRef';
+import CustomHooks from './components/Hooks/CustomHooks';
+
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
+import Services from './components/Pages/Services';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root2345'));
 root.render(
   <React.StrictMode>
-    <TextInputWithFocusButtonClick />
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </Router>
+    
   </React.StrictMode>
 );
 
